@@ -155,6 +155,11 @@ export default function Home() {
             </Card>
           ))}
         </div>
+
+        <div className="text-center text-sm text-gray-500 mt-auto flex flex-col gap-2">
+          <p><strong>Note:</strong> Responses are mocked for demonstration purposes.</p>
+          <p>Try these keywords for different responses: quantum, ai, climate, programming, machinelearning, blockchain, cybersecurity, datascience, iot, virtualreality, renewableenergy</p>
+        </div>
       </div>
     </div>
   );
