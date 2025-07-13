@@ -111,6 +111,202 @@ export const mockResponses: Record<string, ModelResponse[]> = {
       text: 'Programming is the systematic approach to creating software by writing instructions that computers can understand and execute. It involves translating human logic into machine-readable code using programming languages. This discipline requires both technical expertise and creative thinking, as programmers design solutions that can range from simple automation scripts to complex systems that power modern technology.',
       promptId: 'programming'
     }
+  ],
+
+  // Machine learning prompt
+  'machinelearning': [
+    {
+      id: 'gpt-ml-1',
+      modelName: 'gpt-4',
+      text: 'Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It uses algorithms to identify patterns in data and make predictions or decisions. Machine learning powers many modern technologies, from recommendation systems to autonomous vehicles, and continues to advance rapidly with new techniques like deep learning.',
+      promptId: 'machinelearning'
+    },
+    {
+      id: 'claude-ml-1',
+      modelName: 'claude',
+      text: 'Machine learning represents a paradigm shift in how we approach problem-solving with computers. Instead of writing explicit rules, we provide algorithms with data and let them discover patterns and relationships. This approach has revolutionized fields from healthcare to finance, enabling systems that can recognize images, understand language, and make complex predictions with remarkable accuracy.',
+      promptId: 'machinelearning'
+    },
+    {
+      id: 'grok-ml-1',
+      modelName: 'grok',
+      text: 'Machine learning is the science of getting computers to act without being explicitly programmed. It focuses on developing algorithms that can access data and use it to learn for themselves. The process involves training models on historical data to make predictions or decisions, leading to systems that can improve their performance over time through experience.',
+      promptId: 'machinelearning'
+    },
+    {
+      id: 'gemini-ml-1',
+      modelName: 'gemini',
+      text: 'Machine learning is a branch of artificial intelligence that provides systems the ability to automatically learn and improve from experience. It uses statistical techniques to give computers the ability to "learn" without being explicitly programmed, focusing on the development of computer programs that can access data and use it to learn for themselves.',
+      promptId: 'machinelearning'
+    }
+  ],
+
+  // Blockchain prompt
+  'blockchain': [
+    {
+      id: 'gpt-blockchain-1',
+      modelName: 'gpt-4',
+      text: 'Blockchain is a distributed digital ledger that records transactions across a network of computers in a way that is secure, transparent, and tamper-resistant. Each block contains a list of transactions, and once recorded, the data in any given block cannot be altered retroactively without altering all subsequent blocks. This technology underpins cryptocurrencies like Bitcoin and has applications in supply chain management, voting systems, and digital identity.',
+      promptId: 'blockchain'
+    },
+    {
+      id: 'claude-blockchain-1',
+      modelName: 'claude',
+      text: 'Blockchain technology represents a revolutionary approach to data management and trust. It creates a decentralized, distributed ledger that maintains a continuously growing list of records, called blocks, which are linked and secured using cryptography. This design ensures that once information has been recorded, it cannot be changed without the consensus of the network, making it ideal for applications requiring transparency and immutability.',
+      promptId: 'blockchain'
+    },
+    {
+      id: 'grok-blockchain-1',
+      modelName: 'grok',
+      text: 'Blockchain is a type of distributed ledger technology that maintains a continuously growing list of records, called blocks, that are linked and secured using cryptography. Each block typically contains a cryptographic hash of the previous block, a timestamp, and transaction data. This design makes it extremely difficult to alter historical data, providing a high level of security and trust in digital transactions.',
+      promptId: 'blockchain'
+    },
+    {
+      id: 'gemini-blockchain-1',
+      modelName: 'gemini',
+      text: 'Blockchain is a decentralized digital ledger technology that enables secure, transparent, and tamper-proof record-keeping across a distributed network. It consists of a chain of blocks, each containing transaction data and a cryptographic hash linking it to the previous block. This architecture ensures data integrity and eliminates the need for trusted intermediaries in digital transactions.',
+      promptId: 'blockchain'
+    }
+  ],
+
+  // Cybersecurity prompt
+  'cybersecurity': [
+    {
+      id: 'gpt-cyber-1',
+      modelName: 'gpt-4',
+      text: 'Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes. Effective cybersecurity requires a comprehensive approach that includes technology, processes, and people working together to create multiple layers of defense.',
+      promptId: 'cybersecurity'
+    },
+    {
+      id: 'claude-cyber-1',
+      modelName: 'claude',
+      text: 'Cybersecurity encompasses the technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. It involves implementing security measures to prevent, detect, and respond to cyber threats, ensuring the confidentiality, integrity, and availability of information systems. This field is constantly evolving as new threats emerge and technology advances.',
+      promptId: 'cybersecurity'
+    },
+    {
+      id: 'grok-cyber-1',
+      modelName: 'grok',
+      text: 'Cybersecurity is the discipline dedicated to protecting digital systems, networks, and data from malicious attacks and unauthorized access. It involves implementing various security measures, including firewalls, encryption, and access controls, to safeguard information assets. The field requires continuous vigilance and adaptation as cyber threats become increasingly sophisticated and pervasive.',
+      promptId: 'cybersecurity'
+    },
+    {
+      id: 'gemini-cyber-1',
+      modelName: 'gemini',
+      text: 'Cybersecurity is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It encompasses a range of security measures designed to protect against various types of cyber threats, including malware, phishing, and data breaches. Effective cybersecurity requires a multi-layered approach that addresses both technical and human factors.',
+      promptId: 'cybersecurity'
+    }
+  ],
+
+  // Data science prompt
+  'datascience': [
+    {
+      id: 'gpt-data-1',
+      modelName: 'gpt-4',
+      text: 'Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It combines statistics, mathematics, computer science, and domain expertise to analyze complex data sets and make data-driven decisions. Data science is used across industries to solve problems, predict trends, and optimize processes.',
+      promptId: 'datascience'
+    },
+    {
+      id: 'claude-data-1',
+      modelName: 'claude',
+      text: 'Data science represents the convergence of multiple disciplines to extract meaningful insights from data. It involves collecting, cleaning, analyzing, and interpreting large volumes of data to inform decision-making and solve complex problems. The field combines statistical analysis, machine learning, and domain expertise to transform raw data into actionable intelligence that drives innovation and efficiency.',
+      promptId: 'datascience'
+    },
+    {
+      id: 'grok-data-1',
+      modelName: 'grok',
+      text: 'Data science is the art and science of extracting valuable insights from data through systematic analysis and interpretation. It encompasses a broad range of techniques including statistical analysis, machine learning, and data visualization to uncover patterns, trends, and relationships in complex datasets. This field enables organizations to make informed decisions and predictions based on empirical evidence.',
+      promptId: 'datascience'
+    },
+    {
+      id: 'gemini-data-1',
+      modelName: 'gemini',
+      text: 'Data science is a multidisciplinary approach to analyzing and interpreting complex data sets to extract meaningful insights and support decision-making. It combines expertise in statistics, programming, and domain knowledge to process large volumes of information and identify patterns that can inform business strategies, scientific research, and policy development.',
+      promptId: 'datascience'
+    }
+  ],
+
+  // Internet of Things prompt
+  'iot': [
+    {
+      id: 'gpt-iot-1',
+      modelName: 'gpt-4',
+      text: 'The Internet of Things (IoT) refers to the network of physical objects embedded with sensors, software, and other technologies that enable them to connect and exchange data with other devices and systems over the internet. These connected devices can range from simple household items to complex industrial machinery, creating a vast network of interconnected systems that can monitor, control, and optimize various processes.',
+      promptId: 'iot'
+    },
+    {
+      id: 'claude-iot-1',
+      modelName: 'claude',
+      text: 'The Internet of Things represents a paradigm shift in how we interact with technology, creating a network of interconnected devices that can communicate and share data autonomously. These smart devices, equipped with sensors and connectivity, can monitor environmental conditions, track performance metrics, and execute automated responses, enabling unprecedented levels of automation and efficiency across industries.',
+      promptId: 'iot'
+    },
+    {
+      id: 'grok-iot-1',
+      modelName: 'grok',
+      text: 'The Internet of Things is a system of interrelated computing devices, mechanical and digital machines, objects, animals, or people that are provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction. This technology enables seamless communication between devices and systems.',
+      promptId: 'iot'
+    },
+    {
+      id: 'gemini-iot-1',
+      modelName: 'gemini',
+      text: 'The Internet of Things encompasses the network of physical devices, vehicles, buildings, and other objects embedded with electronics, software, sensors, and network connectivity that enables these objects to collect and exchange data. This interconnected ecosystem allows for intelligent automation and real-time monitoring across various applications and industries.',
+      promptId: 'iot'
+    }
+  ],
+
+  // Virtual reality prompt
+  'virtualreality': [
+    {
+      id: 'gpt-vr-1',
+      modelName: 'gpt-4',
+      text: 'Virtual Reality (VR) is a technology that creates a simulated environment that users can interact with using special electronic equipment, such as a headset with a screen or gloves fitted with sensors. VR immerses users in a computer-generated world that can be similar to or completely different from the real world, providing an interactive experience that can be used for entertainment, education, training, and therapy.',
+      promptId: 'virtualreality'
+    },
+    {
+      id: 'claude-vr-1',
+      modelName: 'claude',
+      text: 'Virtual Reality represents a revolutionary approach to human-computer interaction, creating immersive digital environments that users can explore and manipulate in real-time. By combining advanced display technology, motion tracking, and spatial audio, VR systems can transport users to entirely new worlds or enhance their understanding of existing ones, opening possibilities for entertainment, education, and professional applications.',
+      promptId: 'virtualreality'
+    },
+    {
+      id: 'grok-vr-1',
+      modelName: 'grok',
+      text: 'Virtual Reality is a computer-generated simulation of a three-dimensional environment that can be interacted with in a seemingly real or physical way by a person using special electronic equipment. This technology creates an immersive experience that can replicate real-world scenarios or create entirely fictional environments, enabling new forms of entertainment, learning, and professional development.',
+      promptId: 'virtualreality'
+    },
+    {
+      id: 'gemini-vr-1',
+      modelName: 'gemini',
+      text: 'Virtual Reality is an immersive technology that creates a computer-simulated environment that users can interact with through specialized hardware like headsets and controllers. VR technology can simulate real-world experiences or create entirely fictional environments, providing users with a sense of presence in digital spaces that can be used for gaming, training, education, and therapeutic applications.',
+      promptId: 'virtualreality'
+    }
+  ],
+
+  // Renewable energy prompt
+  'renewableenergy': [
+    {
+      id: 'gpt-renewable-1',
+      modelName: 'gpt-4',
+      text: 'Renewable energy comes from natural sources that are constantly replenished, such as sunlight, wind, rain, tides, waves, and geothermal heat. Unlike fossil fuels, these energy sources are sustainable and produce little to no greenhouse gas emissions. Renewable energy technologies include solar panels, wind turbines, hydroelectric dams, and geothermal power plants, which are becoming increasingly cost-effective and widely adopted worldwide.',
+      promptId: 'renewableenergy'
+    },
+    {
+      id: 'claude-renewable-1',
+      modelName: 'claude',
+      text: 'Renewable energy represents a fundamental shift toward sustainable power generation that harnesses naturally replenishing resources. These energy sources, including solar, wind, hydroelectric, and geothermal power, offer a clean alternative to fossil fuels while providing reliable electricity generation. The adoption of renewable energy technologies is accelerating as costs decrease and efficiency improves, driving the global transition toward a more sustainable energy future.',
+      promptId: 'renewableenergy'
+    },
+    {
+      id: 'grok-renewable-1',
+      modelName: 'grok',
+      text: 'Renewable energy encompasses power generation technologies that utilize naturally replenishing resources such as sunlight, wind, water, and geothermal heat. These sustainable energy sources produce minimal environmental impact compared to traditional fossil fuels and are becoming increasingly competitive in terms of cost and efficiency. The widespread adoption of renewable energy is crucial for addressing climate change and ensuring long-term energy security.',
+      promptId: 'renewableenergy'
+    },
+    {
+      id: 'gemini-renewable-1',
+      modelName: 'gemini',
+      text: 'Renewable energy refers to power generated from natural resources that are continuously replenished, such as solar radiation, wind, flowing water, and geothermal heat. These sustainable energy sources produce minimal greenhouse gas emissions and environmental impact, making them essential for combating climate change and achieving energy independence. Renewable energy technologies continue to advance, becoming more efficient and cost-effective.',
+      promptId: 'renewableenergy'
+    }
   ]
 };
 
