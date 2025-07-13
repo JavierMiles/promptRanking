@@ -106,16 +106,9 @@ export default function Home() {
 
       <div className="max-w-4xl mx-auto w-full flex flex-col gap-8">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <Textbox
-            value={prompt}
-            onChange={setPrompt}
-            placeholder="e.g., Explain quantum computing in simple terms..."
-            disabled={loading}
-          />
-
-          <div className="text-center grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Dropdown
-              placeholder="Select models"
+              label="Select Models"
               options={options}
               selectedValues={selectedModels}
               onSelectionChange={handleModelToggle}
@@ -123,12 +116,22 @@ export default function Home() {
             />
 
             <Dropdown
+              label="Select Dimensions"
               options={ALL_DIMENSIONS}
               selectedValues={selectedDimensions}
               onSelectionChange={handleDimensionToggle}
               multiple={true}
             />
+          </div>
 
+          <Textbox
+            value={prompt}
+            onChange={setPrompt}
+            placeholder="e.g., Explain quantum computing in simple terms..."
+            disabled={loading}
+          />
+
+          <div className="text-center">
             <Button 
               label={loading ? "Generating..." : "Find Fighters"}
               icon="mystery"
