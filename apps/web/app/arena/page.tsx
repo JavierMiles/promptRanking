@@ -77,7 +77,12 @@ export default function FightPage() {
 
       <div className="grid gap-8 md:grid-cols-[1fr_2fr]">
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-semibold text-white mb-4">{`Battles ${completedBattles.size}/${dimensions.length}`}</h2>
+          <div className="mb-4 flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold text-white">{`Battles ${completedBattles.size}/${dimensions.length}`}</h2>
+            <p className="text-gray-400">
+              Select a dimension to start a battle
+            </p>
+          </div>
           <div className="flex flex-col gap-4">
             {(prompt?.dimensions || dimensions).map((dimension) => (
               <Task
@@ -94,7 +99,12 @@ export default function FightPage() {
         <div className="flex flex-col gap-4 h-full">
           {responses.length > 0 ? (
             <>
-              <h2 className="text-2xl font-semibold text-white mb-4">Fighters</h2>
+              <div className="mb-4">
+                <h2 className="text-2xl font-semibold text-white">Fighters</h2>
+                <p className="text-gray-400">
+                  Responses from the models you selected
+                </p>
+              </div>
               <div className="flex flex-col gap-2">
                 {responses.map((response) => (
                   <Card
