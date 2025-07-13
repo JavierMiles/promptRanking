@@ -63,9 +63,7 @@ export const Dropdown = ({
 
   const getDisplayText = () => {
     if (multiple) {
-      return selectedOptions.length > 0
-        ? `${selectedOptions.length} selected`
-        : placeholder;
+      return selectedOptions.map(option => option.label).join(', ') || placeholder;
     }
 
     return selectedOption ? selectedOption.label : placeholder;
@@ -92,7 +90,7 @@ export const Dropdown = ({
           ${isOpen ? 'ring-2 ring-blue-600 border-transparent' : ''}
         `}
       >
-        <span className={selectedOptions.length > 0 || selectedOption ? 'text-white' : 'text-gray-400'}>
+        <span className={`w-full truncate text-left ${selectedOptions.length > 0 || selectedOption ? 'text-white' : 'text-gray-400'}`}>
           {getDisplayText()}
         </span>
         <Icon 
